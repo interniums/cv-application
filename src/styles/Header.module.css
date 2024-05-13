@@ -1,9 +1,6 @@
 
 .container {
 	width: 100%;
-	height: 20%;
-	position: fixed;
-	top: 0;
 }
 
 .logo {
@@ -35,3 +32,62 @@
 	gap: 10px;
 	text-decoration: none;
 }
+
+/* .progressContainer {
+	text-align: center;
+}
+
+.progress {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.progressButtons {
+	display: flex;
+	gap: 250px;
+}
+
+.progressBar {
+	width: 630px;
+	height: 13px;
+	position: absolute;
+	background-color: white;
+	z-index: 0;
+	padding: 0px 10px;
+	margin-bottom: 25px;
+}
+
+.imgContainer {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.progressBarFiller {
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(27, 45, 105);
+	width: 100%;
+	height: 100%;
+}
+
+.iconContainer {
+	border-radius: 50%;
+	background-color: rgb(27, 45, 105);
+	width: 75px;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+#experianceImageContainer {
+	background-color: antiquewhite;
+} */

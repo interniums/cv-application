@@ -1,5 +1,5 @@
 import styles from '../../styles/Header.module.css'
-import githublogo from '../../assets/github-icon.png' 
+import githublogo from '../../assets/github-icon.png'
 
 export default function Header() {
 

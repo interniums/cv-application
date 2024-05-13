@@ -8,10 +8,48 @@
 
 #root {
 	width: 100%;
-	height: 100vh;
 	background-color: #42505d;
 	background-image: linear-gradient(57deg, #3a4855 0%, #342a3d 100%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+}
+
+.headerSection {
+	width: 100%;
+	position: static;
+	top: 0;
+}
+
+.main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.mainContainer {
+	width: 1000px;
+	height: 850px;
+	background-color: rgba(255, 255, 255, .8);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0);
+	padding: 20px 35px;
+}
+
+/* #experianceImageContainer {
+	background-color: rgb(200, 200, 200);
+}
+
+#templateImageContainer {
+	background-color: rgb(200, 200, 200);
+} */
+
+#personImageContainer {
+	background-color: rgb(200, 200, 200);
 }

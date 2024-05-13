@@ -1,0 +1,88 @@
+
+
+.progressContainer {
+	text-align: center;
+}
+
+.progress {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.progressButtons {
+	display: flex;
+	gap: 250px;
+}
+
+.progressBar {
+	width: 615px;
+	height: 13px;
+	position: absolute;
+	background-color: white;
+	z-index: 0;
+	padding: 0px 10px;
+	margin-bottom: 25px;
+	display: flex;
+	background-color: rgba(66, 80, 93, .6);
+}
+
+.imgContainer {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.progressBarFiller1 {
+	z-index: 1;
+	background-color: rgb(200, 200, 200);
+	width: 20%;
+	height: 100%;
+}
+
+.progressBarFiller2 {
+	z-index: 1;
+	background-color: rgb(66, 80, 93);
+	width: 75%;
+	height: 100%;
+}
+
+.progressBarFiller3 {
+	z-index: 1;
+	background-color: rgb(66, 80, 93);
+	width: 25%;
+	height: 100%;
+}
+
+.iconContainer {
+	border-radius: 50%;
+	/* background-color: rgb(27, 45, 105); */
+	width: 90px;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	background-color: rgb(66, 80, 93);
+}
+
+.personimage {
+	opacity: 1;
+}
+
+.expimage {
+	opacity: .3;
+	background-color: inherit;
+}
+
+.templateimage {
+	opacity: .3;
+	width: 55px;
+	height: 55px;
+}

@@ -8,6 +8,7 @@ function App() {
 
 	return (
 		<div className="content">
+			<div className="backside"></div>
 			<header className="headerSection">
 				<Header />
 				<Progress />

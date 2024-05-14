@@ -3,12 +3,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	color: rgba(255, 255, 255, .8);
 }
 
 #root {
 	width: 100%;
-	background-color: #42505d;
+	/* background-color: #42505d; */
 	background-image: linear-gradient(57deg, #3a4855 0%, #342a3d 100%);
 	display: flex;
 	justify-content: center;
@@ -20,26 +19,55 @@
 	height: 100%;
 }
 
+.backside {
+	position: fixed;
+	top: 220px;
+	left: -20%;
+	z-index: 0;
+	width: 150%;
+	height: 500px;
+	/* background-image: linear-gradient(to left, #4b4453, #4b4453, #4b4453, #4b4453, #4b4453); */
+	background-image: linear-gradient(to right top, #615d66, #5d5667, #5a4e68, #564769, #523f69);
+	transform: rotate3d(1, 1, 1, 350deg);
+}
+
 .headerSection {
 	width: 100%;
 	position: static;
 	top: 0;
+	z-index: 2;
+	color: rgba(255, 255, 255, .8);
 }
 
 .main {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	margin-top: 50px;
+	margin-top: 100px;
+	min-height: 800px;
 }
 
 .mainContainer {
 	width: 1000px;
-	height: 850px;
+	height: fit-content;
 	background-color: rgba(255, 255, 255, .8);
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0);
 	padding: 20px 45px;
+	z-index: 1;
+}
+
+#moreInfoButton {
+	color: #4c4c4c;
+	height: 50px;
+}
+
+#avatar {
+	width: 175px;
+	height: 175px;
+}
+
+.css-z3c6am-MuiFormControl-root-MuiTextField-root {
+	width: 500px;
 }
 
 /* #experianceImageContainer {

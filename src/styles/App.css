@@ -44,21 +44,66 @@
 	display: flex;
 	justify-content: center;
 	margin-top: 100px;
-	min-height: 800px;
+	min-height: 585px;
+	margin-bottom: 50px;
+}
+
+.main2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	min-height: 585px;
+	margin-bottom: 50px;
 }
 
 .mainContainer {
 	width: 1000px;
 	height: fit-content;
 	background-color: rgba(255, 255, 255, .8);
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
 	padding: 20px 45px;
 	z-index: 1;
+}
+
+.footerContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	gap: 50px;
+}
+
+/* stepper */
+.css-1wy08lz-MuiPaper-root-MuiMobileStepper-root {
+	position: relative;
+	z-index: 1;
+	background: rgba(255, 255, 255, .8);
+}
+
+/* next page button */
+.css-jh47zj-MuiButtonBase-root-MuiButton-root {
+	background-image: linear-gradient(to right top, #615d66, #5d5667, #5a4e68, #564769, #523f69);
+	color: rgba(255, 255, 255, .8);
+	padding: 8px 5px 8px 22px;
+	padding-right: 5px;
+	width: 250px;
+	height: 70px;
+	font-size: 30px;
 }
 
 #moreInfoButton {
 	color: #4c4c4c;
 	height: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+	margin-bottom: 3px;
 }
 
 #avatar {
@@ -70,14 +115,26 @@
 	width: 500px;
 }
 
-/* #experianceImageContainer {
-	background-color: rgb(200, 200, 200);
+svg {
+	color: #4c4c4c;
 }
 
-#templateImageContainer {
-	background-color: rgb(200, 200, 200);
-} */
+#objectiveInput {
+	position: fixed;
+	width: 0px;
+	height: 0px;
+	top: 0;
+	left: 0;
+}
 
-#personImageContainer {
-	background-color: rgb(200, 200, 200);
+#saveButton {
+	padding: 10px 15px;
+	display: flex;
+	gap: 10px;
+	background-color: inherit;
+	color: #4c4c4c;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+	border: 1px solid #4c4c4c;
 }

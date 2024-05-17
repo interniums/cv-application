@@ -4,8 +4,9 @@ import experianceicon from '../../assets/experianceicon.svg'
 import experianceiconBlack from '../../assets/experianceicon-black.svg'
 import templateicon from '../../assets/templateicon.svg'
 import templateiconBlack from '../../assets/templateicon-black.svg'
+import { useState } from 'react'
 
-export default function Progress() {
+export default function Progress(bar) {
 
 	return (
 		<div className={styles.container}>
@@ -13,26 +14,26 @@ export default function Progress() {
 				<h1>Personal details</h1>
 				<div className={styles.progress}>
 					<div className={styles.progressBar}>
-						<div className={styles.progressBarFiller1}></div>
-						<div className={styles.progressBarFiller2}></div>
-						<div className={styles.progressBarFiller3}></div>
+						<div style={{backgroundColor: bar.b1}} className={styles.progressBarFiller1}></div>
+						<div style={{backgroundColor: bar.b2}} className={styles.progressBarFiller2}></div>
+						<div style={{backgroundColor: bar.b3}} className={styles.progressBarFiller3}></div>
 					</div>
 					<div className={styles.progressButtons}>
 						<div className={styles.imgContainer}  id='personContainer'>
-							<div className={styles.iconContainer} id='personImageContainer'>
+							<div style={{backgroundColor: bar.image1}} className={styles.iconContainer} id='personImageContainer'>
 								<img className={styles.personimage} src={personicon} alt="" />
 							</div>
 							<div className={styles.lable}>Personal</div>
 						</div>
 						<div className={styles.imgContainer} id='experianceContainer'>
-							<div className={styles.iconContainer} id='experianceImageContainer'>
-								<img className={styles.expimage} src={experianceicon} alt="" />
+							<div style={{backgroundColor: bar.image2}} className={styles.iconContainer} id='experianceImageContainer'>
+								<img className={styles.expimage} src={bar.exp == 'white' ? experianceicon : experianceiconBlack} alt="" />
 							</div>
 								<div className={styles.lable}>Experiance</div>
 						</div>
 						<div className={styles.imgContainer} id='templateContainer'>
-							<div className={styles.iconContainer} id='templateImageContainer'>
-								<img className={styles.templateimage} src={templateicon} alt="" />
+							<div style={{backgroundColor: bar.image3}} className={styles.iconContainer} id='templateImageContainer'>
+								<img className={styles.templateimage} src={bar.temp == 'white' ? templateicon : templateiconBlack} alt="" />
 							</div>
 							<div className={styles.lable}>Templates</div>
 						</div>

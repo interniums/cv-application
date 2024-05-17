@@ -14,5 +14,8 @@ export const dataB = {
 	gender: '',
 	website: '',
 	linkdln: '',
-	maritual: ''
+	maritual: '',
+	resumeObjective: '',
 }
+
+export const workExp = []

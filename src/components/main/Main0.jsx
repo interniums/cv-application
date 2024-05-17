@@ -1,9 +1,10 @@
-import styles from '../../styles/Main.module.css'
+import styles from '../../styles/Main0.module.css'
 import cameraicon from '../../assets/cameraicon.svg'
 import TextField from '@mui/material/TextField'
 import IconButton from '@mui/material/IconButton'
 import Button from '@mui/material/Button'
 import plusicon from '../../assets/plusicon.svg'
+import AddIcon from '@mui/icons-material/Add'
 import { dataB } from '../../data'
 import { useState } from 'react'
 import MoreInfo from './MoreInfo'
@@ -54,8 +55,8 @@ export default function Main() {
 		handler()
 	}
 
-	console.log(data)
-	console.log(dataB)
+	// console.log(data)
+	// console.log(dataB)
 
 	return (
 		<div className={styles.container}>	
@@ -159,7 +160,7 @@ export default function Main() {
 					onClick={()=> setMoreInfo(true)}
 				>
 					More information
-					<img className={styles.plusicon} src={plusicon} alt="" />
+					<AddIcon />
 				</Button>
 			</div>
 			}

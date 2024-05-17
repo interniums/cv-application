@@ -2,7 +2,7 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider'
 import { DatePicker } from '@mui/x-date-pickers/DatePicker'
 import TextField from '@mui/material/TextField'
-import styles from '../../styles/Main.module.css'
+import styles from '../../styles/Main0.module.css'
 import { dataB } from '../../data'
 import Select from '@mui/material/Select'
 import InputLabel from '@mui/material/InputLabel'
@@ -36,9 +36,6 @@ export default function MoreInfo() {
 	return (
 		<div className={styles.moreInfoContainer}>
 			<section className={styles.ageSection}>
-				{/* <LocalizationProvider dateAdapter={AdapterDayjs}>
-					<DatePicker inputFormat="MM/DD/YYYY" disableFuture name='date' value={data.date} onChange={handleData} label="Date of birth"/>
-				</LocalizationProvider> */}
 				<input placeholder='Chose birth date' type="date" value={data.date} onChange={handleData} name='date' className={styles.datePicker}/>
 				<TextField
 					value={data.maritual}
@@ -76,7 +73,7 @@ export default function MoreInfo() {
 					onChange={handleData}
 				/>
 				<TextField
-					value={data.linkdnl}
+					value={data.linkdln}
 					fullWidth
 					name='linkdln'
 					label="Linkdln"

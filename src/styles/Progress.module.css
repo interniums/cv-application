@@ -41,7 +41,7 @@
 
 .progressBarFiller1 {
 	z-index: 1;
-	background-color: rgb(200, 200, 200);
+	background-color: rgb(66, 80, 93);
 	width: 20%;
 	height: 100%;
 }
@@ -49,15 +49,17 @@
 .progressBarFiller2 {
 	z-index: 1;
 	background-color: rgb(66, 80, 93);
-	width: 75%;
+	width: 35%;
 	height: 100%;
+	transition: .7s;
 }
 
 .progressBarFiller3 {
 	z-index: 1;
 	background-color: rgb(66, 80, 93);
-	width: 25%;
+	width: 55%;
 	height: 100%;
+	transition: .7s;
 }
 
 .iconContainer {
@@ -72,6 +74,7 @@
 	z-index: 2;
 	cursor: pointer;
 	background-color: rgb(66, 80, 93);
+	transition: 1s;
 }
 
 .personimage {

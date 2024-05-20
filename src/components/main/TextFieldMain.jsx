@@ -1,29 +1,17 @@
+/* eslint-disable react/prop-types */
 import styles from '../../styles/TextField.module.css'
 import FormatBoldOutlinedIcon from '@mui/icons-material/FormatBoldOutlined'
 import FormatItalicOutlinedIcon from '@mui/icons-material/FormatItalicOutlined'
 import FormatUnderlinedOutlinedIcon from '@mui/icons-material/FormatUnderlinedOutlined'
 import FormatListNumberedOutlinedIcon from '@mui/icons-material/FormatListNumberedOutlined'
 import FormatListBulletedOutlinedIcon from '@mui/icons-material/FormatListBulletedOutlined'
-import SaveIcon from '@mui/icons-material/Save'
-import Button from '@mui/material/Button'
 import Alert from '@mui/material/Alert'
 import { useRef, useState } from 'react'
 import { dataB } from '../../data'
-import { workExp } from '../../data'
 
-export default function TextFieldMain(direction) {
-	const [value, setValue] = useState('')
+export default function TextFieldMain(props) {
 	const [alert, setAlert] = useState('none')
 	const inputRef = useRef('')
-
-	const getInput = () => {
-		direction.direction == 'jobDescription' ? workExp.push({id: workExp.length, text: value}) : dataB[direction.direction] = value
-	}
-
-	const takeInput = (e) => {
-		let input = e.target.innerHTML
-		setValue(input)
-	}
 
 	const alertHandler = () => {
 		alert == 'none' ? setAlert('flex') : null
@@ -32,8 +20,15 @@ export default function TextFieldMain(direction) {
 		}, 2000)
 	}
 
-	console.log(value)
-	console.log(workExp)
+	const hadnleInput = (e) => {
+		if (props.direction == 'objective') {
+			dataB.resumeObjective = e.target.textContent
+		} else if (props.direction == 'jobDescription') {
+			props.setData({...props.data, description: e.target.textContent})
+		} else if (props.direction == 'eduDescription') {
+			props.setEduData({...props.dataEdu, description: e.target.textContent})
+		}
+	}
 
 	return (
 
@@ -49,10 +44,15 @@ export default function TextFieldMain(direction) {
 					<Alert
 						color='#4c4c4c'
 						style={{display: alert, transition: '.8s'}}
-						severity="info">This feature is in progress...</Alert>
+						severity="info">This feature is in progress...
+					</Alert>
 				</header>
 				<div className={styles.main}>
-					<p ref={inputRef} id='input' contentEditable={true} onKeyDown={takeInput} action="" className={styles.input}></p>
+					<p ref={inputRef} id='input' contentEditable={true}
+						onInput={hadnleInput}
+						action="" 
+						className={styles.input}
+					></p>
 				</div>
 			</div>
 		</div>

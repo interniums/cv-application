@@ -102,8 +102,27 @@
     gap: 5px;
 }
 
+#addExperienceButton {
+	margin-bottom: -20px;
+	margin-top: 15px;
+	color: #4c4c4c;
+	height: 50px;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
 .css-i4bv87-MuiSvgIcon-root {
 	margin-bottom: 3px;
+}
+
+#demo-simple-select {
+	width: 300px;
+}
+
+#skillid {
+	width: 100%;
 }
 
 #avatar {
@@ -128,13 +147,17 @@ svg {
 }
 
 #saveButton {
-	padding: 10px 15px;
+	padding: 7px 15px;
 	display: flex;
-	gap: 10px;
+	gap: 6px;
 	background-color: inherit;
 	color: #4c4c4c;
 	font-size: 15px;
-	font-weight: bold;
 	margin-top: 15px;
 	border: 1px solid #4c4c4c;
+	width: 120px;
+}
+
+#saveButton:hover {
+	background-color: rgba(255, 255, 255, .5);
 }

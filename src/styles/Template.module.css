@@ -1,0 +1,53 @@
+
+
+.container {
+	display: grid;
+	justify-content: center;
+	align-items: top;
+}
+
+.section {
+	width: 595pt;
+	height: 842pt;
+	background-color: rgba(255, 255, 255, .8);
+	padding: 20px 50px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 2;
+	border-radius: 5px;
+}
+
+.image {
+	width: 200px;
+	height: 200px;
+}
+
+.header {
+	display: flex;
+	align-items: top;
+}
+
+.info {
+	margin-left: 10px;
+}
+
+.main {
+	margin-top: 20px;
+}
+
+.mainh2 {
+	text-align: center;
+}
+
+.descriptionText {
+	padding: 10px;
+}
+
+.section2 {
+	margin-top: 20px;
+}
+
+.edudiv {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}

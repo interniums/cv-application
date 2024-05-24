@@ -18,7 +18,11 @@ export const dataB = {
 	resumeObjective: '',
 }
 
-export const jobData = []
-export const eduData = []
-export const skillsData = []
-export const languageData = []
+export const jobData = [
+]
+export const eduData = [
+]
+export const skillsData = [
+]
+export const languageData = [
+]

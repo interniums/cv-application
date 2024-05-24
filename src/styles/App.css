@@ -14,6 +14,10 @@
 	align-items: center;
 }
 
+body {
+	background-image: linear-gradient(57deg, #3a4855 0%, #342a3d 100%);
+}
+
 .content {
 	width: 100%;
 	height: 100%;
@@ -21,7 +25,7 @@
 
 .backside {
 	position: fixed;
-	top: 220px;
+	top: 300px;
 	left: -20%;
 	z-index: 0;
 	width: 150%;
@@ -57,6 +61,15 @@
 	margin-bottom: 50px;
 }
 
+.template {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	min-height: 585px;
+	margin-bottom: 50px;
+}
+
 .mainContainer {
 	width: 1000px;
 	height: fit-content;
@@ -64,6 +77,36 @@
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
 	padding: 20px 45px;
 	z-index: 1;
+}
+
+.buttonDownloadContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonDownload {
+	position: relative;
+	z-index: 2;
+	font-size: 25px;
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: inherit;
+	color: rgba(255, 255, 255, .8);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 5px 15px rgba(0, 0, 0, 0.3);
+	outline: none;
+	border: none;
+	transition: .5s;
+}
+
+.buttonDownload:hover {
+	transform: scale(105%);
+}
+
+.buttonDownload:active {
+	transform: scale(100%);
+	transition: 0s;
 }
 
 .footerContainer {
@@ -160,4 +203,156 @@ svg {
 
 #saveButton:hover {
 	background-color: rgba(255, 255, 255, .5);
+}
+
+
+@media (max-width: 1200px) {
+	.mainContainer {
+		width: 700px;
+		transition: .5s;
+	}
+
+	._objectiveContainer_1dtxj_3 {
+		width: 700px;
+		transition: .5s;
+	}
+
+	._educationContainer_1dtxj_43 {
+		width: 700px;
+		transition: .5s;
+	}
+
+	._expContainer_1dtxj_63 {
+		width: 700px;
+		transition: .5s;
+	}
+
+	._input_nd9bz_97 {
+		min-width: 300px;
+	}
+
+	#demo-simple-select {
+		width: 250px;
+	}
+
+	._section_q14mj_17 {
+		width: 400pt;
+		height: 600pt;
+	}
+
+	._image_q14mj_39 {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media (max-width: 950px) {
+	.mainContainer {
+		width: 370px;
+		transition: .5s;
+	}
+
+	._objectiveContainer_1dtxj_3 {
+		width: 370px;
+		transition: .5s;
+	}
+
+	._educationContainer_1dtxj_43 {
+		width: 370px;
+		transition: .5s;
+	}
+
+	._expContainer_1dtxj_63 {
+		width: 370px;
+		transition: .5s;
+	}
+
+	._input_nd9bz_97 {
+		min-width: 300px;
+	}
+
+	._section_q14mj_17 {
+		width: 300pt;
+		height: 600pt;
+		padding: 15px;
+	}
+
+	._image_q14mj_39 {
+		width: 100px;
+		height: 100px;
+	}
+
+	._progressButtons_2z6bz_35 {
+		gap: 55px;
+	}
+
+	._progressBar_2z6bz_45 {
+		width: 350px;
+	}
+
+	._progressContainer_2z6bz_9 {
+		margin-top: 25px;
+	}
+
+	._lable_zmxgh_141 {
+		width: 100px;
+		height: 100px;
+	}
+
+	._photoContainer_zmxgh_51 {
+		width: 150px;
+		height: 175px;
+	}
+
+	._datePicker_zmxgh_195 {
+		font-size: 15px;
+		width: 100%;
+	}
+
+	._phototext_zmxgh_83 {
+		display: none;
+	}
+	/* .css-q8hpuo-MuiFormControl-root {
+		visibility: hidden;
+	} */
+
+	#demo-simple-select {
+		width: 80px;
+	}
+
+	._input_nd9bz_97 {
+		min-width: 335px;
+	}
+
+	._section4_1dtxj_153 {
+		justify-items: center;
+	}
+
+	._otherContainer_1dtxj_23 {
+		width: 370px;
+	}
+
+	/* .css-q8hpuo-MuiFormControl-root {
+		max-width: max-content;
+	} */
+
+	#saveButton {
+		width: 100px;
+	}
+
+	._educationContainer_1dtxj_43 {
+		padding: 15px;
+	}
+
+	._otherContainer_1dtxj_23 {
+		padding: 15px;
+	}
+
+	._expContainer_1dtxj_63 {
+		padding: 15px;
+	}
+
+	._objectiveContainer_1dtxj_3 {
+		padding: 15px;
+	}
 }

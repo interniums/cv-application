@@ -61,6 +61,7 @@ export default function Main1() {
 		level: ''
 	})
 
+	// console.log(data)
 	// console.log(dataB)
 	// console.log(jobData)
 	// console.log(eduData)
@@ -87,11 +88,6 @@ export default function Main1() {
 						show == true ? 
 						<>
 						<Main1Inputs data={data} setData={setData} show={show} setShow={setShow}/>
-						{/* <TextFieldMain 
-							setData={setData}
-							data={data}
-							direction={'jobDescription'}
-						/> */}
 						</>  : null
 					}
 					<WorkExp setData={setData} setShow={setShow}/>

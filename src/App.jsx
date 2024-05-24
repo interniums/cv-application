@@ -6,6 +6,9 @@ import Main1 from './components/main/Main1'
 import Button from '@mui/material/Button'
 import KeyboardArrowRightOutlinedIcon from '@mui/icons-material/KeyboardArrowRightOutlined'
 import KeyboardArrowLeftOutlinedIcon from '@mui/icons-material/KeyboardArrowLeftOutlined'
+import TemplatePage from "./components/main/TemplatePage"
+import { dataB } from "./data"
+import PdfDownloadComponent from "./components/main/PdfConvert"
 
 function App() {
 	const [disable, setDisable] = useState({
@@ -62,6 +65,12 @@ function App() {
 				{
 					disable.count == 1 ? <Main1 /> : console.log()
 				}
+			</div>
+			<div className="template" style={{display: disable.count == 2 ? "grid" : 'none'}}>
+				{
+					disable.count == 2 ? <TemplatePage /> : console.log()
+				}
+				<PdfDownloadComponent />
 			</div>
 			<footer className="footerContainer">
 				<Button variant="contained" size="large" name='left' disabled={disable.left} onClick={handleButton}>
